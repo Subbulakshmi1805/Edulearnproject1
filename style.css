@@ -1,0 +1,165 @@
+/* Remove default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Ensure padding and borders don't affect layout */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+h1{
+    font-family: Garamond, serif;
+    font-size: 30px;
+}
+/* Remove any padding/margin in container and rows */
+.container-fluid, .row, .col-md-6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set full height for body and remove overflow */
+body {
+    padding: 0;  /* Remove all padding */
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Set header title color */
+.title {
+    color: #5C6AC4;
+}
+
+.container {
+    background: white;
+    align-items: center;
+}
+
+/* Align social icons to center */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.button1 {
+    background-color: #008CBA;
+    border-radius: 2px;
+    font-size: 16px;  /* Reduced font size */
+    text-align: center;
+    border: none;
+    color: white;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+}
+
+.button2 {
+    background-color: orangered;
+    font-size: 14px;  /* Reduced font size */
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    color:white;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 90px;
+    height: 35px;
+}
+
+.half-width-1 {
+    background-color: #DDA0DD;
+    padding: 60px 30px 20px 30px;  /* Reduced padding to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;  /* Ensure it takes up full screen height */
+}
+
+.half-width-2 {
+    background: linear-gradient(to bottom, #00ffff, #ff99cc);
+    padding: 30px 30px 20px 30px;  /* Reduced padding to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Ensure it takes up full screen height */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 28px;  /* Slightly reduced font size */
+}
+
+form {
+    max-width: 400px;  /* Adjusted form width for a compact layout */
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;  /* Reduced padding for a more compact look */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;  /* Smaller font size for inputs */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    font-size: 16px;  /* Slightly smaller font size */
+}
+
+table, th, td {
+    border: 2px solid #333;  /* Thicker border for table clarity */
+}
+
+th, td {
+    padding: 8px;  /* Reduced cell padding for more compact rows */
+    text-align: center;
+}
+
+.delete-btn, .edit-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;  /* Reduced button size */
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: blue;
+}
+
+.responsive {
+    overflow-x: auto;
+}
+
+/* Decrease row height */
+tr {
+    height: 40px;  /* Adjust row height to be more compact */
+}

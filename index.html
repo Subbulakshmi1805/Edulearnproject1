@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluewebpage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-6 half-width-1">
+                <img src="e-learning-icons-flat_1284-3950.avif" alt="A description of the image" width="500" height="500" />
+                <!-- Python and Java Course Count -->
+                <div id="course-counts" class="mt-3">
+                    <p>Web Development Courses: <span id="web">0</span></p>
+                    <p>Data Science Courses: <span id="data">0</span></p>
+                    <p>Python Courses: <span id="python">0</span></p>
+                    <p>Total Courses Enrolled :<p id="count"></p></p>
+                </div>
+            </div>
+            <div class="col-md-6 half-width-2 d-flex justify-content-center align-items-center">
+               <b><h1 style="font-size:50px">EDU LEARN</h1></b>
+                <form id="book-form">
+                    <input type="text" required id="name" placeholder="Enter your name">
+                    <div>
+                        <label>Course</label>
+                        <select id="status" required>
+                            <option value="">Select Course</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Duration</label>
+                        <select id="duration" required>
+                            <option value="">Select Duration</option>
+                            <option value="3 Months">3 Months</option>
+                            <option value="6 Months">6 Months</option>
+                            <option value="1 year">1 year</option>
+                        </select>
+                    </div>
+                    <button onclick="f()">Add Course</button>
+                </form>
+                <div class="responsive">
+                    <table style="width:100%" id="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Duration</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
